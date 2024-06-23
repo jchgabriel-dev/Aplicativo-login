@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostulanteInfoActivity">
+
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="INFORMACION"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:text="BUSCAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+    <EditText
+        android:id="@+id/editBuscar"
+        android:layout_width="201dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="DNI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+    <TextView
+        android:id="@+id/textMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBuscar" />
+
+
+    <TextView
+        android:id="@+id/textDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="72dp"
+        android:text="DNI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBuscar" />
+
+    <EditText
+        android:id="@+id/editDNI"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/textDNI"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
+
+    <TextView
+        android:id="@+id/textNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:text="Nombres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDNI" />
+
+    <EditText
+        android:id="@+id/editNombres"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/textNombres"
+        app:layout_constraintTop_toBottomOf="@+id/editDNI" />
+
+    <TextView
+        android:id="@+id/textApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:text="Apellidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNombres" />
+
+    <EditText
+        android:id="@+id/editApellidos"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/textApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/editNombres" />
+
+
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="F. de Nacimiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textApellidos" />
+
+    <EditText
+        android:id="@+id/editFecha"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/textFecha"
+        app:layout_constraintTop_toBottomOf="@+id/editApellidos" />
+
+
+    <TextView
+        android:id="@+id/textColegio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="40dp"
+        android:text="Colegio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFecha" />
+
+    <EditText
+        android:id="@+id/editColegio"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/textColegio"
+        app:layout_constraintTop_toBottomOf="@+id/editFecha" />
+
+    <TextView
+        android:id="@+id/textCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="48dp"
+        android:text="Carrera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textColegio" />
+
+
+    <EditText
+        android:id="@+id/editCarrera"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/textCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/editColegio" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
